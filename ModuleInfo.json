@@ -1,15 +1,15 @@
 {
-  "Name": "GenRot",
+  "Name": "RotateActorsSwitch",
   "Author": "charuse",
-  "Description": "Rotate via Generator ID",
+  "Description": "Rotate via Generator ID on SW_A",
   "InstallDependencies": ["Syati_ObjectFactories", "Syati_Init"],
   "ModuleData" : [
     {
       "NameObjFactory" : [
         {
-          "Name" : "GenRot",
-          "Function" : "createExtActor<GenRot>",
-          "Include" : "GenRot.h"
+          "Name" : "RotateActorsSwitch",
+          "Function" : "createExtActor<RotateActorsSwitch>",
+          "Include" : "RotateActorsSwitch.h"
         }
       ]
     }

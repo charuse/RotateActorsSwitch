@@ -1,15 +1,16 @@
 #pragma once
 #include "syati.h"
 
-class GenRot : public NameObj {
+class RotateActorsSwitch : public NameObj {
 public:
-    GenRot(const char *pName);
+    RotateActorsSwitch(const char *pName);
 
     virtual bool rotater();
     virtual void init(const JMapInfoIter &rIter);
     virtual void control();
     
     LiveActorGroup* mGroup;
+    StageSwitchCtrl* mCtrl;
     TVec3f mRot;
     s32 mGenID;
     bool mGo;
