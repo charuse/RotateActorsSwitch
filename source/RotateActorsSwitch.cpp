@@ -50,7 +50,7 @@ void RotateActorsSwitch::init(const JMapInfoIter &rIter) {
 
 void RotateActorsSwitch::control() {
     if (mGo && mCtrl->isOnSwitchA()) {
-        mGo == false;
+        mGo = false;
 
         rotater()
         ? OSReport("[RAS] Rotated %d objects with ID %hd\n", mGroup->mNumObjs, mGroup->getActor(0)->mLinkedInfo.mLinkId) 
